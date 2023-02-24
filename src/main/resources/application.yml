@@ -1,3 +1,4 @@
+# 访问端口
 server:
   port: 8080
 
@@ -5,8 +6,11 @@ spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     druid:
+      # 数据库连接
       url: jdbc:mysql://localhost:3306/ssm_db?serverTimezone=UTC
+      # 账号
       username: root
+      # 密码
       password: 1234
 
 mybatis-plus:
@@ -15,4 +19,5 @@ mybatis-plus:
       table-prefix: tbl_
       id-type: auto
   configuration:
+    # 开启日志
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
